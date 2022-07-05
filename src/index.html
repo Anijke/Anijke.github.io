@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>My first site</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
        <nav>
-           <div class="home">
-               <input type="button" value="Home">
+           <div class="home">Home
+               <input type="button">
            </div>
            <div class="menu">
                 <ul>
@@ -23,40 +25,33 @@
        </nav>
    </header>
    <main>
+    <div class="titlebg">
        <div class="title">
-           <h1>Привет <br> </h1>
-            <h2>Я начинающий веб-разработчик</h2>
+           <h1>Привет <br>Я начинающий веб-разработчик</h1>
            <input type="button" value="Обо мне">
            <input type="button" value="Отзывы">
        </div>
-       
+    </div>
        <div class="abtmyself">
           <h2><strog>Обо мне</strog></h2>
-           <p class="abtme">some info about myself(will add soon)</p>
-               <div class="contactInfo">
-                   <ul>
-                       <li>Phone : </li>
-                       <li>E-mail : </li>
-                       <li>Discord : </li>
-                   </ul>
-           </div>
+           <p class="infoabtme">some info about myself(will add soon)</p>
        </div>
        
        <div class="skills">
            <h2> <strong>Мои навыки</strong> </h2>
-           <section class="web-design">
-           <h2>Веб-дизайн</h2>
+           <div class="webdesign">
+           <h3>Веб-дизайн</h3>
            <img src="" alt="webdesignIcon">
-           </section>
-           <section class="targetadd">
-               <h2>Таргетированная реклама</h2>
+           </div>
+           <div class="targetadd">
+               <h3>Таргетированная реклама</h3>
                <img src="" alt="targetaddIcon">
-           </section>
-           <section class="sociability">
-               <h2>Комуникабельность</h2>
+           </div>
+           <div class="sociability">
+               <h3>Комуникабельность</h3>
                <img src="" alt="sociabilityIcon">
                <p>Найду подход к любому клиенту!</p>
-           </section>
+           </div>
        </div>
 
        <div class="case">
@@ -68,7 +63,8 @@
         <p>http/::...</p>
         <h3>Название проекта</h3>
         <p>"описание проекта"</p>
-       </div
+        <input type="button" value="Visit live site">
+       </div>
 
        <div class="reviews">
         <h2>Отзывы</h2>
