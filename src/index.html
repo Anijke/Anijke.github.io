@@ -35,10 +35,12 @@
     </div>
        <div class="abtmyself">
           <h2><strog>Обо мне</strog></h2>
+          <img src="/img/avatar.jpg" alt="avatar">
            <p class="infoabtme">some info about myself(will add soon)</p>
        </div>
        
        <div class="skills">
+        <div class="skills_container">
            <h2> <strong>Мои навыки</strong> </h2>
            <div class="webdesign">
            <h3>Веб-дизайн</h3>
@@ -51,54 +53,77 @@
            <div class="sociability">
                <h3>Комуникабельность</h3>
                <img src="img/skillsIcons/sociability.png" alt="sociabilityIcon">
-               <p>Найду подход к любому клиенту!</p>
+           </div>
+           <div class="development">
+            <h3>Разработка</h3>
+            <img src="/img/skillsIcons/development.png" alt="developmentIcon">
            </div>
        </div>
-
+    </div>
        <div class="case">
         <h2>Мои работы</h2>
-        <img src="" alt="project">
-        <h3>Client:</h3>
+        <div class="case_container">
+        <img src="/img/examplecase.png" alt="project">
+        <section class="client_website">
+        <h3><strong>Client</strong>:</h3>
         <p>Какая-то кампания</p>
-        <h3>Website:</h3>
+        <h3><strong>Website</strong>:</h3>
         <p>http/::...</p>
-        <h3>Название проекта</h3>
+        <a href="">Visit live site</a>
+        </section>
+        <section class="projectinfo">
+        <h3><strong>Название проекта</strong></h3>
         <p>"описание проекта"</p>
-        <input type="button" value="Visit live site">
+        </section>
        </div>
+    </div>
        <div class="cost">
         <h2>Расчет стоимости</h2>
         <section class="typeofsite">
         <h2>Тип сайта</h2>
         <form action="">
-            <select name="type">
-                <option>type1</option>
-                <option>type2</option>
+            <select name="type" class="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">type2</option>
+                <option value="3">type3</option>
             </select>
         </form>
         </section>
-        <section class="designofsite">
+        <section name="designofsite">
         <h2>Дизайн сайта</h2>
         <form action="">
-            <select name="design">
-                <option>design 1</option>
-                <option>design 2</option>
+            <select name="design" class="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
             </select>
         </form>
         </section>
         <section class="adaptabilityofsite">
             <h2>Адаптивность</h2>
         <form action="">
-            <select name="adaptability">
-                <option>1</option>
-                <option>2</option>
+            <select name="adaptability" class="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
             </select>
         </form>
         </section>
-        <p>Сроки :</p>
-        <p>Стоимсть :</p>
+        <hr>
+        <section class="costResult">
+        <div class="time">
+            <p class="info">Сроки</p>
+            <p class="number">0</p>
+        </div>
+        <hr>
+        <div class="price">
+            <p class="info">Стоимость</p>
+            <p class="number">0</p>
+        </div>
+        </section>
        </div>
        <div class="stat">
+        <div class="stat_container">
         <h2>Немного статистики</h2>
         <section class="clients">
             <img src="/img/statIcons/clients.png" alt="clientsIcon">
@@ -115,14 +140,23 @@
             <h3>number</h3>
             <h4>проектов завершено</h4>
         </section>
+        <section class="rewards">
+            <img src="/img/statIcons/badge.png" alt="rewardsIcon">
+            <h3>number</h3>
+            <h4>наград получено</h4>
+        </section>
+    </div>
        </div>
        <div class="reviews">
         <h2>Отзывы</h2>
+        <div class="reviews_container">
         <img src="" alt="reviewerPhoto">
-        <p class="reviewtext">text</p>
-        <p>Name, company</p>
+        <p class="reviewtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, necessitatibus.</p>
+        <p class="reviewerName"><strong>Name</strong>, company</p>
        </div>
+    </div>
        <div class="contact">
+        <div class="contact_container">
            <h2>Мои контакты</h2>
            <div class="myContacts">
                <section class="location">
@@ -149,13 +183,16 @@
             <div class="message">
                <h2>Оставь мне сообщение</h2>
                <form action="">
+                <div class="messageInputs">
                 <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Е-mail">
+                <input type="text" placeholder="Е-mail" class="secondbutton">
+                </div>
                <textarea name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
-               <input type="submit" name="submit" value="Отправить">
+               <input type="submit" name="submit" value="Отправить" class="submitbutton">
             </form>  
         </div>
        </div>
+    </div>
    </main>
    <footer>
        <p>Copyright Арсений Трубило</p>

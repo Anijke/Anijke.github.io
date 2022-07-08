@@ -48,7 +48,7 @@ nav{
 .title input{
     height: 40px;
     text-align: center;
-    border: 2px solid white;
+    border: 5px solid white;
     border-radius: 5px;
     padding: 0px 16px;
     margin: 40px 14px 0px 14px;
@@ -57,6 +57,14 @@ nav{
 .abtmyself{
     height: 720px;
     width: 100%;
+}
+.abtmyself img{
+    display: block;
+    border: 2px black solid;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: 170px;
 }
 .abtmyself h2{
     line-height: 110px;
@@ -69,31 +77,35 @@ nav{
     font-size: 15px;
 }
 .skills{
-    width: 100%;
-    height: 555px;
     background: url(/img/skillsBG.png) center no-repeat;
 }
-.skills h2{
+.skills_container{
+    height: 555px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 96px;
+}
+.skills_container h2{
     line-height: 115px;
     text-align: center;
     font-size: 30px;
 }
-.skills div{
+.skills_container div{
     float: left;
+    width: 200px;
     text-align: center;
-    margin: 100px 40px 0px 40px;
+    margin: 70px 36px 0px 36px;
 }
-.skills h3{
+.skills_container h3{
     font-size: 18px;
     font-weight: bold;
     margin: 0px 20px 20px 20px;
 }
-.skills img{
+.skills_container img{
     width: 100px;
     height: 100px;
 }
 .case{
-    width: 100%;
     height: 1000px;
 }
 .case h2{
@@ -101,10 +113,52 @@ nav{
     font-weight: bold;
     line-height: 100px;
     text-align: center;
+    text-transform: uppercase;
+}
+.case_container{
+    margin: 0 auto;
+    width: 1000px;
+}
+.case_container img{
+    width: 100%;
+}
+.client_website{
+    width: 150px;
+    float: left;
+}
+.client_website h3{
+    font-size: 20px;
+}
+.client_website p{
+    font-size: 15px;
+    margin: 15px 0px;
+}
+.client_website a{
+    text-align: center;
+    margin-top: 25px;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    background: #63b5ae;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.projectinfo{
+    margin: 0px 0px 0px 235px;
+}
+.projectinfo h3{
+    font-size: 20px;
+}
+.projectinfo p{
+    font-size: 15px;
+    margin: 15px 0px;
 }
 .cost{
-    width: 100%;
+    width: 1100px;
     height: 900px;
+    margin: 0px auto;
+    text-align: center;
 }
 .cost h2{
     font-size: 30px;
@@ -112,73 +166,178 @@ nav{
     text-align: center;
     margin: 65px 0px;
 }
-.cost{
-    text-align: center;
-}
 .cost p{
     margin: 30px 0px;
 }
-
-
-.stat{
+.cost select{
+    margin-bottom: 20px;
+}
+.cost hr{
     width: 100%;
-    height: 460px;
+    height: 2px;
+    border: 2px;
+}
+.costResult .time .price{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.costResult .info{
+    float: left;
+    font-size: 20px;
+}
+.costResult .number{
+    float: right;
+    font-size: 25px;
+}
+.cost .typeSite{
+    display: block;
+    width: 890px;
+    height: 54px;
+    background: #eeeeee;
+    padding-left: 24px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/select.png) 98% 54%/auto no-repeat, #eee;
+}
+.stat{
     background: url(/img/statbg.png) no-repeat center;
 }
-.stat h2{
+.stat_container{
+    width: 1100px;
+    height: 460px;
+    margin: 0 auto;
+}
+.stat_container h2{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
 }
-.stat section{
+.stat_container section{
     float: left;
+    width: 200px;
+    text-align: center;
+    margin: 70px 36px 0px 36px;
 }
-.stat img{
+.stat_container img{
     width: 120px;
     height: 120px;
     margin: 10px 50px;
 }
-.stat h3{
+.stat_container h3{
     font-size: 15px;
     font-weight: bold;
-}
-
-
-.reviews{
-    width: 100%;
-    height: 500px;
 }
 .reviews h2{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.reviews_container{
+    width: 100%;
+    height: 500px;
+}
+.reviews_container{
+    text-align: center;
+}
+.reviewtext{
+    margin: 20px auto 50px auto;
+    font-size: 20px;
+}
+.reviewerName{
+    font-size: 20px;
+
+}
+.reviews_container img{
+    display: block;
+    border: 2px black solid;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: 170px;
 }
 .contact{
-    width: 100%;
-    height: 600px;
     background: url(/img/contactBG.png) center no-repeat;
     color: white;
+}
+.contact_container{
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 68px;
 }
 .myContacts{
     width: 100%;
     height: 300px;
 }
+.myContacts section{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 50px 100px 50px 0px;
+}
+.myContacts section h3{
+    margin: 0px 0px 0px 70px;
+}
+.myContacts section p{
+    margin: 0px 0px 0px 70px;
+}
 .message{
     width: 100%;
     height: 300px;
 }
-.contact h2{
+.messageInputs input{
+    display: block;
+    width: 352px;
+    float: left;
+    height: 34px;
+    padding-left: 14px;
+    margin-bottom: 14px;
+    background: rgba(210, 214, 220, 0.93);
+    font-size: 16px;
+}
+.messageInputs .secondbutton{
+    float: right;
+}
+.message textarea{
+    display: block;
+    width: 100%;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    background: rgba(220, 224, 230, 0.93);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.message .submitbutton{
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-bottom: 70px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+}
+.contact_container h2{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     color: white;
 }
-.contact img{
+.contact_container img{
     width: 100px;
     height: 100px;
     float: left;
     margin: 50px;
 }
+
+
+
 footer{
     width: 100%;
     height: 50px;
