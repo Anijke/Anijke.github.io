@@ -198,6 +198,13 @@ nav{
     font-size: 16px;
     -webkit-appearance: none;
 }
+.costResult .time,.price{
+    margin-bottom: 0px;
+    
+}
+.clear{
+    clear: both;
+}
 .stat{
     background: url(../img/statbg.png) no-repeat center;
 }
