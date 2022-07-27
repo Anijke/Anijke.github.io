@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My first site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -64,7 +65,9 @@
    </header>
    <main>
     <div class="titlebg">
-    <div class="container h-100"><div class="row align-items-center h-100 w-100"><div class="col-lg-6">
+    <div class="container h-100">
+        <div class="row align-items-center h-100 w-100">
+        <div class="col-lg-6">
             <div class="title">
                 <h1>Привет <br>Меня зовут Арсений</h1>
                 <h2>Я веб-разработчик</h2>
@@ -72,52 +75,69 @@
                 <input type="button" value="Отзывы">
             </div>
          </div>
-    </div></div></div>
-       <div class="abtmyself">
-          <h2><strog>Обо мне</strog></h2>
-          <img src="img/avatar.jpg" alt="avatar">
-           <p class="infoabtme">some info about myself(will add soon)</p>
+    </div>
+</div>
+</div>
+       <div class="abtmyself container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <h2>Обо мне</h2>
+                <hr>
+            </div>
+        </div>
+          <img class="d-block mx-auto" src="img/avatar.jpg" alt="avatar">
+          <div class="row justify-content-center">
+            <div class="col-8 text-center">
+                <p class="infoabtme">some info about myself(will add soon)</p>
+            </div>
+          </div>
        </div>
        
        <div class="skills">
-        <h2> <strong>Мои навыки</strong> </h2>
-        <div class="skills_container">
-           <div class="webdesign">
+        <div class="skills_container container">
+            <h2>Мои навыки</h2>
+            <hr>
+            <div class="row justify-content-center text-center">
+           <div class="skills_item col-12 col-sm-6 col-md-3">
            <h3>Веб-дизайн</h3>
            <img src="img/skillsIcons/webdesign.png" alt="webdesignIcon">
            </div>
-           <div class="targetadd">
+           <div class="skills_item col-12 col-sm-6 col-md-3">
                <h3>Таргетированная реклама</h3>
                <img src="img/skillsIcons/target.png"targetaddIcon">
            </div>
-           <div class="sociability">
+           <div class="skills_item col-12 col-sm-6 col-md-3">
                <h3>Комуникабельность</h3>
                <img src="img/skillsIcons/sociability.png" alt="sociabilityIcon">
            </div>
-           <div class="development">
+           <div class="skills_item col-12 col-sm-6 col-md-3">
             <h3>Разработка</h3>
             <img src="img/skillsIcons/development.png" alt="developmentIcon">
            </div>
+        </div>
        </div>
     </div>
        <div class="case">
-        <h2>Мои работы</h2>
-        <div class="case_container">
+        <div class="case_container container">
+            <h2>Мои работы</h2>
+            <hr>
         <img src="img/examplecase.png" alt="project">
-        <section class="client_website">
-        <h3><strong>Client</strong>:</h3>
-        <p>Какая-то кампания</p>
-        <h3><strong>Website</strong>:</h3>
-        <p>http/::...</p>
-        <a href="">Visit live site</a>
+        <div class="row justify-content-between">
+        <section class="client_website col-12 col-md-3 col-lg-2">
+            <h3><strong>Client</strong>:</h3>
+            <p>Какая-то кампания</p>
+            <h3><strong>Website</strong>:</h3>
+            <p>http/::...</p>
+            <a href="">Visit live site</a>
         </section>
-        <section class="projectinfo">
+        <section class="projectinfo col-12 col-md-9">
         <h3><strong>Название проекта</strong></h3>
         <p>"описание проекта"</p>
         </section>
        </div>
     </div>
-       <div class="cost">
+    </div>
+       <div class="cost container">
         <h2>Расчет стоимости</h2>
         <section class="typeofsite">
         <h2>Тип сайта</h2>
@@ -164,81 +184,94 @@
         </section>
        </div>
        <div class="stat">
-        <div class="stat_container">
+        <div class="stat_container container">
         <h2>Немного статистики</h2>
-        <section class="clients">
+        <hr>
+        <div class="row justify-content-center text-center">
+        <section class="clients stat_item col-12 col-sm-6 col-md-3">
             <img src="img/statIcons/clients.png" alt="clientsIcon">
             <h3>number</h3>
             <h4>счастливых клиентов</h4>
         </section>
-        <section class="hours">
+        <section class="hours stat_item col-12 col-sm-6 col-md-3">
             <img src="img/statIcons/hours.png" alt="hoursIcon">
             <h3>nubmer</h3>
             <h4>часов работы</h4>
         </section>
-        <section class="doneprojects">
+        <section class="doneprojects stat_item col-12 col-sm-6 col-md-3">
             <img src="img/statIcons/doneprojects.png" alt="projectsIcon">
             <h3>number</h3>
             <h4>проектов завершено</h4>
         </section>
-        <section class="rewards">
+        <section class="rewards stat_item col-12 col-sm-6 col-md-3">
             <img src="img/statIcons/badge.png" alt="rewardsIcon">
             <h3>number</h3>
             <h4>наград получено</h4>
         </section>
     </div>
+</div>
        </div>
        <div class="reviews">
+        <div class="reviews_container container">
         <h2>Отзывы</h2>
-        <div class="reviews_container">
+        <hr>
+        <div class="row justify-content-center text-center">
+        <div class="review col-12 col-md-8">
         <img src="" alt="reviewerPhoto">
         <p class="reviewtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, necessitatibus.</p>
         <p class="reviewerName"><strong>Name</strong>, company</p>
+        </div>
        </div>
     </div>
+    </div>
        <div class="contact">
-        <div class="contact_container">
+        <div class="contact_container container">
            <h2>Мои контакты</h2>
-           <div class="myContacts">
-               <section class="location">
+           <hr>
+           <div class="myContacts row justify-content-center text-center">
+               <section class="location contact_item col-12 col-md-4 col-lg-3">
                   <h3>Location</h3>
-                   <img src="img/contactIcons/geo.png" alt="locationIcon">
+                   <a href=""><img src="img/contactIcons/geo.png" alt="locationIcon"></a>
                    <p>location</p>
                </section>
-               <section class="email">
+               <section class="email contact_item col-12 col-md-4 col-lg-3">
                   <h3>Email</h3>
-                   <img src="img/contactIcons/mail.png" alt="emailIcon">
+                  <a href=""><img src="img/contactIcons/mail.png " alt="emailIcon"></a>
                    <p>address</p>
                </section>
-               <section class="phone">
+               <section class="phone contact_item col-12 col-md-4 col-lg-3">
                   <h3>Phone</h3>
-                   <img src="img/contactIcons/phone.png" alt="phoneIcon">
+                   <a href=""><img src="img/contactIcons/phone.png" alt="phoneIcon"></a>
                    <p>number</p>
                </section>
-               <section class="discrod">
+               <section class="discrod contact_item col-12 col-md-4 col-lg-3">
                   <h3>Discord</h3>
-                   <img src="img/contactIcons/discord.png" alt="discordIcon">
+                   <a href=""><img src="img/contactIcons/discord.png" alt="discordIcon"></a>
                    <p>discordid</p>
                </section>
             </div> 
+            
             <div class="message">
                <h2>Оставь мне сообщение</h2>
-               <form action="">
-                <div class="messageInputs">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Е-mail" class="secondbutton">
+               <form action="#">
+                <div class="messageInputs row justify-content-center text-center">
+                <input type="text" placeholder="Имя" class="col-12 col-sm-4">
+                <input type="text" placeholder="Е-mail" class="secondbutton" class="col-12 col-sm-4">
                 </div>
+                <div class="row">
+                    <div class="col-12">
                <textarea name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                    </div>
+                </div>
                <input type="submit" name="submit" value="Отправить" class="submitbutton">
             </form>  
-        </div>
        </div>
+    </div>
     </div>
    </main>
    <footer>
        <p>Copyright Арсений Трубило</p>
    </footer>
-    
 </body>
 <script src="js/bootstrap.bundle.min.js.map"></script>
 </html>

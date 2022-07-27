@@ -91,9 +91,11 @@ nav{
     animation: comming 2s ease;
     transition: all 0.4s ease;
     transform: scale(1);
+    text-decoration: none;
 }
 .home:visited{
     color: white;
+    text-decoration: none;
 }
 .home:hover{
     display: block;
@@ -235,10 +237,8 @@ nav{
     width: 100%;
 }
 .abtmyself img{
-    display: block;
-    border: 2px black solid;
+    border: 1px black solid;
     border-radius: 50%;
-    margin: 0 auto 20px auto;
     width: 150px;
     height: 170px;
 }
@@ -249,6 +249,20 @@ nav{
     font-size: 30px;
     font-weight: bold;
 }
+.abtmyself hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    opacity: 0.75;
+    margin: 0px auto 30px;
+    width: 80px;
+}
+.infoabtme{
+    margin: 18px 0px 0px 0px;
+    text-align: center;
+    font-size: 17px;
+}
+
 .infoabtme{
     text-align: center;
     font-size: 15px;
@@ -257,9 +271,9 @@ nav{
     background: url(../img/skillsBG.png) center no-repeat;
 }
 .skills_container{
-    height: 555px;
-    width: 1100px;
+    height: 725px;
     margin: 0 auto;
+    padding-top: 100px;
     padding-bottom: 96px;
 }
 .skills h2{
@@ -267,32 +281,35 @@ nav{
     line-height: 115px;
     text-align: center;
     font-size: 30px;
+    font-weight: bold;
 }
-@keyframes skillsappear{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.skills_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    margin: 0px auto 100px;
+    width: 80px;
+    opacity: 0.75;
 }
-.skills_container div{
-    float: left;
-    width: 200px;
-    text-align: center;
-    margin: 70px 36px 0px 36px;
+.skills_container img{
+    width: 100px;
+    height: 100px;
 }
 .skills_container h3{
     font-size: 18px;
     font-weight: bold;
     margin: 0px 20px 20px 20px;
 }
-.skills_container img{
-    width: 100px;
-    height: 100px;
-}
 .case{
-    height: 1000px;
+    height: 1200px;
+}
+.case hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    margin: 0px auto 100px;
+    width: 80px;
+    opacity: 0.75;
 }
 .case h2{
     font-size: 30px;
@@ -302,8 +319,7 @@ nav{
     text-transform: uppercase;
 }
 .case_container{
-    margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 }
 .case_container img{
     width: 100%;
@@ -321,6 +337,7 @@ nav{
     border-radius: 8px;
     transform: scale(1);
     transition: all 0.4s;
+    text-decoration: none;
 }
 .case_container a:hover{
     box-shadow: -40px 16px teal;
@@ -328,7 +345,6 @@ nav{
     z-index: 0;
 }
 .client_website{
-    width: 150px;
     float: left;
 }
 .client_website h3{
@@ -338,9 +354,6 @@ nav{
     font-size: 15px;
     margin: 15px 0px;
 }
-.projectinfo{
-    margin: 0px 0px 0px 235px;
-}
 .projectinfo h3{
     font-size: 20px;
 }
@@ -349,8 +362,8 @@ nav{
     margin: 15px 0px;
 }
 .cost{
-    width: 1100px;
-    height: 900px;
+    width: 100%;
+    height: 1000px;
     margin: 0px auto;
     text-align: center;
 }
@@ -406,42 +419,53 @@ nav{
 }
 .stat{
     background: url(../img/statbg.png) no-repeat center;
-}
-.stat_container{
-    width: 1100px;
-    height: 460px;
+    width: 100%;
+    height: 500px;
     margin: 0 auto;
 }
+.stat_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    margin: 0px auto 100px;
+    width: 80px;
+    opacity: 0.75;
+}
 .stat_container h2{
+    padding-top: 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
 }
-.stat_container section{
-    float: left;
-    width: 200px;
-    text-align: center;
-    margin: 70px 36px 0px 36px;
-}
 .stat_container img{
-    width: 120px;
-    height: 120px;
-    margin: 10px 50px;
+    width: 130px;
+    height: 130px;
 }
 .stat_container h3{
     font-size: 15px;
     font-weight: bold;
 }
-.reviews h2{
+.reviews{
+    width: 100%;
+    height: 600px;
+}
+.reviews_container{
+    padding-top: 60px;
+}
+.reviews_container h2{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
     padding-top: 30px;
 }
-.reviews_container{
-    width: 100%;
-    height: 500px;
+.reviews_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    margin: 0px auto 100px;
+    width: 80px;
+    opacity: 0.75;
 }
 .reviews_container{
     text-align: center;
@@ -464,38 +488,48 @@ nav{
 }
 .contact{
     background: url(../img/contactBG.png) center no-repeat;
+    background-size: cover;
     color: white;
+    height: 1200px;
+}
+.contact_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    margin: 0px auto 100px;
+    width: 80px;
+    opacity: 0.75;
 }
 .contact_container{
     width: 800px;
     margin: 0 auto;
-    padding-bottom: 68px;
+}
+.contact_container h2{
+    padding-top: 60px;
 }
 .myContacts{
     width: 100%;
     height: 290px;
 }
-.myContacts section{
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 50px 100px 50px 0px;
+.myContacts h3{
+    padding-left: 25px;
+    font-size: 20px;
 }
-.myContacts section h3{
-    margin: 0px 0px 0px 70px;
-}
-.myContacts section p{
-    margin: 0px 0px 0px 70px;
+.myContacts p{
+    padding-left: 25px;
+    font-size: 15px;
 }
 .message{
     width: 100%;
-    height: 300px;
+    height: 600px;
+}
+.message h2{
+    font-size: 30px;
+    margin: 25px 0px;
 }
 .messageInputs input{
-    display: block;
-    width: 352px;
-    float: left;
     height: 34px;
+    width: 50%;
     padding-left: 14px;
     margin-bottom: 14px;
     background: rgba(210, 214, 220, 0.93);
@@ -505,14 +539,12 @@ nav{
     float: right;
 }
 .message textarea{
-    display: block;
     width: 100%;
-    resize: none;
-    padding-top: 10px;
-    padding-left: 15px;
     background: rgba(220, 224, 230, 0.93);
     font-size: 16px;
     margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
 }
 .message .submitbutton{
     display: block;
